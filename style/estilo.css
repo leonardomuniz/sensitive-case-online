@@ -6,8 +6,6 @@
    font-family: 'Roboto', sans-serif;
 }
 
-body{ background-color: #ecebf1  ;}
-
 h1{
    font-weight: bolder;
    font-size: 45px;
@@ -15,10 +13,17 @@ h1{
    color: #e65617
 }
 
+body{ background-color: #ecebf1  ;}
 span{ color:#24345b; }
 i { color: #e65617; font-size: 35px; margin: 15px 15px; }
 i:hover{ cursor: pointer; color: #f38252 ;}
-#botoes button, a { margin-left: 5px; }
+
+#botoes {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+#corpo {margin-top: 7.5%;}
 
 
 .corpo_azul{ background-color: #24345b ; }
@@ -27,18 +32,20 @@ i:hover{ cursor: pointer; color: #f38252 ;}
 .letra_amarelo{ color: #ffc107; }
 .letra_azul{ color:#24345b; }
 
-
-#corpo {margin-top: 7.5%;}
-
-
 .caixa_alta { text-transform: uppercase;}
 .caixa_baixa{ text-transform: lowercase; }
 .capitalizado{ text-transform: capitalize; }
 .titulo{ text-transform:unset; }
 
 .animar { animation-duration: 1s; animation-fill-mode: both;}
-
 .animar-infinito:hover { animation-iteration-count: infinite; }
+
+.btn {
+   margin-left: 5px;
+}
+
+.pulse { animation-name: pulse; }
+.fadeIn { animation-name: fadeIn; }
 
 
 @keyframes pulse {
@@ -53,12 +60,11 @@ i:hover{ cursor: pointer; color: #f38252 ;}
 }
 
 
-.pulse { animation-name: pulse; }
-.fadeIn { animation-name: fadeIn; }
-
-@media (max-width: 600px){
+@media (max-width: 750px){
+   #botoes {
+      flex-direction: column;
+   }
    .btn{
-
-      display: block;
+      margin-top: 5px;
    }
 }
