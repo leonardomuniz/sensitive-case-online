@@ -23,7 +23,7 @@ i:hover{ cursor: pointer; color: #f38252 ;}
    flex-direction: row;
    justify-content: center;
 }
-#corpo {margin-top: 7.5%;}
+#corpo {margin: 7.5% auto;}
 
 
 .corpo_azul{ background-color: #24345b ; }
@@ -66,5 +66,8 @@ i:hover{ cursor: pointer; color: #f38252 ;}
    }
    .btn{
       margin-top: 5px;
+   }
+   #corpo{
+      margin-top: ;
    }
 }
