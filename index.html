@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style/estilo.css">
+    <title>Corretor</title>
+</head>
+
+<body>
+    <section>
+        <header class="d-flex flex-row-reverse">
+            <div class="p-2 animar animar-infinito pulse">
+                <i class="fas fa-moon" id="icone" onclick=" tema_escuro()"></i>
+            </div>
+        </header>
+        <div class="container animar fadeIn">
+
+            <h1>Sensitive case<span>.online</span></h1>
+
+            <br>
+
+            <article class="d-flex justify-content-center" id="botoes">
+                <button type="button" class="btn btn-primary" onclick="caixa_alta()">
+                    CAIXA ALTA
+                </button>
+                <button type="button" class="btn btn-primary" onclick="caixa_baixa()">
+                    caixa baixa
+                </button>
+                <button type="button" class="btn btn-primary" onclick="capitalizado()">
+                    Capitalizado
+                </button>
+                <button type="button" class="btn btn-primary" onclick="desfazer()">
+                    Desfazer
+                </button>
+                <button type="button" class="btn btn-primary" onclick="copiar()">
+                    Copiar
+                </button>
+                <a id="baixar" download="texto.txt" onclick="baixar()">
+                    <button type="button" class="btn btn-primary">
+                        Download
+                    </button>
+                </a>
+
+            </article>
+
+            <br>
+
+            <article class="d-flex justify-content-center ">
+
+                <textarea class="form-control" placeholder="Deixe seu texto aqui" id="conteudo"
+                    style="height: 200px; width: 85%;" autofocus></textarea>
+            </article>
+
+        </div>
+
+    </section>
+
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/ferramentas.js"></script>
+</body>
+
+</html>

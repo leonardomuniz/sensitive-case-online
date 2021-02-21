@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+body{ background-color: #ecebf1  ;}
+
+h1{
+   font-weight: bolder;
+   font-size: 45px;
+   text-align: center;
+   color: #e65617
+}
+
+span{ color:#24345b; }
+i { color: #e65617; font-size: 35px; margin: 15px 15px; }
+i:hover{ cursor: pointer; color: #f38252 ;}
+#botoes button { margin-left: 5px; }
+
+
+.corpo_azul{ background-color: #24345b ; }
+.letra_branca{ color: #ecebf1 ; }
+.letra_laranja{ color: #e65617; }
+.letra_amarelo{ color: #ffc107; }
+.letra_azul{ color:#24345b; }
+
+
+.container {margin-top: 7.5%;}
+
+
+.caixa_alta { text-transform: uppercase;}
+.caixa_baixa{ text-transform: lowercase; }
+.capitalizado{ text-transform: capitalize; }
+.titulo{ text-transform:unset; }
+
+.animar { animation-duration: 1s; animation-fill-mode: both;}
+
+.animar-infinito:hover { animation-iteration-count: infinite; }
+
+
+@keyframes pulse {
+   from {  transform: scale3d(1, 1, 1);}
+   50% {  transform: scale3d(1.05, 1.05, 1.05);}
+   to { transform: scale3d(1, 1, 1);}
+}
+ 
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to {opacity: 1; }
+}
+
+
+.pulse { animation-name: pulse; }
+.fadeIn { animation-name: fadeIn; }
