@@ -18,7 +18,7 @@ h1{
 span{ color:#24345b; }
 i { color: #e65617; font-size: 35px; margin: 15px 15px; }
 i:hover{ cursor: pointer; color: #f38252 ;}
-#botoes button { margin-left: 5px; }
+#botoes button, a { margin-left: 5px; }
 
 
 .corpo_azul{ background-color: #24345b ; }
@@ -28,7 +28,7 @@ i:hover{ cursor: pointer; color: #f38252 ;}
 .letra_azul{ color:#24345b; }
 
 
-.container {margin-top: 7.5%;}
+#corpo {margin-top: 7.5%;}
 
 
 .caixa_alta { text-transform: uppercase;}
@@ -55,3 +55,10 @@ i:hover{ cursor: pointer; color: #f38252 ;}
 
 .pulse { animation-name: pulse; }
 .fadeIn { animation-name: fadeIn; }
+
+@media (max-width: 600px){
+   .btn{
+
+      display: block;
+   }
+}
